@@ -1,153 +1,140 @@
 (function () {
   let YEARS = [];
-  let state = { year: "all", cat: null, q: "" };
+  const state = { year: "all", cat: null, q: "" };
 
-  const el = (sel) => document.querySelector(sel);
-  const yearsEl = el("#years");
-  const catlistEl = el("#catlist");
-  const resultsEl = el("#results");
-  const viewTitleEl = el("#viewTitle");
-  const viewMetaEl = el("#viewMeta");
-  const searchEl = el("#search");
+  const $ = (s) => document.querySelector(s);
+  const yearsEl = $("#years"), catlistEl = $("#catlist"), resultsEl = $("#results");
+  const viewTitleEl = $("#viewTitle"), viewDescEl = $("#viewDesc"), viewMetaEl = $("#viewMeta");
+  const searchEl = $("#search"), rangeEl = $("#mastheadRange");
 
-  function escapeHtml(s) {
-    return String(s).replace(/[&<>"']/g, (c) => ({
-      "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
-    }[c]));
-  }
+  // theme
+  const root = document.documentElement;
+  const savedTheme = localStorage.getItem("cvpr-theme");
+  root.dataset.theme = savedTheme || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  $("#themeToggle").addEventListener("click", () => {
+    root.dataset.theme = root.dataset.theme === "dark" ? "light" : "dark";
+    localStorage.setItem("cvpr-theme", root.dataset.theme);
+  });
 
-  function yearsInScope() {
-    return state.year === "all" ? YEARS : YEARS.filter(y => y.year === state.year);
-  }
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({
+    "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+  }[c]));
 
-  // Build merged category list across years in scope: name -> {name, papers:[{...,year}]}
-  function mergedCategories() {
-    const map = new Map();
-    const order = [];
-    for (const y of yearsInScope()) {
+  const yearRange = () => `${YEARS[0].year}–${YEARS[YEARS.length - 1].year}`;
+  const inScope = () => state.year === "all" ? YEARS : YEARS.filter(y => y.year === state.year);
+
+  function merged() {
+    const map = new Map(), order = [];
+    for (const y of inScope()) {
       for (const c of y.categories) {
-        if (!map.has(c.name)) { map.set(c.name, { name: c.name, papers: [] }); order.push(c.name); }
-        const bucket = map.get(c.name);
-        for (const p of c.papers) bucket.papers.push({ ...p, year: y.year });
+        if (!map.has(c.name)) { map.set(c.name, { name: c.name, desc: c.desc, papers: [] }); order.push(c.name); }
+        const b = map.get(c.name);
+        if (!b.desc && c.desc) b.desc = c.desc;
+        for (const p of c.papers) b.papers.push({ ...p, year: y.year });
       }
     }
     return order.map(n => map.get(n));
   }
 
-  function matchesQuery(text) {
-    if (!state.q) return true;
-    return text.toLowerCase().includes(state.q.toLowerCase());
+  function renderYears() {
+    let html = `<button class="year-btn ${state.year === "all" ? "active" : ""}" data-year="all">ALL</button>`;
+    html += YEARS.map(y => `<button class="year-btn ${state.year === y.year ? "active" : ""}" data-year="${y.year}">’${y.year.slice(2)}</button>`).join("");
+    yearsEl.innerHTML = html;
+    yearsEl.querySelectorAll(".year-btn").forEach(b =>
+      b.addEventListener("click", () => { state.year = b.dataset.year; state.cat = null; renderAll(); }));
   }
 
-  function renderYearButtons() {
-    const allBtn = `<button class="year-btn ${state.year === "all" ? "active" : ""}" data-year="all">All years</button>`;
-    const btns = YEARS.map(y =>
-      `<button class="year-btn ${state.year === y.year ? "active" : ""}" data-year="${y.year}">${y.year}</button>`
-    ).join("");
-    yearsEl.innerHTML = allBtn + btns;
-    yearsEl.querySelectorAll(".year-btn").forEach(b => {
-      b.addEventListener("click", () => {
-        state.year = b.dataset.year;
-        state.cat = null;
-        renderAll();
-      });
-    });
-  }
-
-  function renderCatList() {
-    const cats = mergedCategories();
+  function renderCats() {
+    const cats = merged();
     const q = state.q.toLowerCase();
-    const visible = cats.filter(c => {
-      if (!q) return true;
-      if (c.name.toLowerCase().includes(q)) return true;
-      return c.papers.some(p => (p.title || "").toLowerCase().includes(q));
-    });
+    const visible = cats.filter(c =>
+      !q || c.name.toLowerCase().includes(q) || c.papers.some(p => (p.title || "").toLowerCase().includes(q)));
+    const total = cats.reduce((s, c) => s + c.papers.length, 0);
 
-    const allActive = state.cat === null ? "active" : "";
-    let html = `<button class="cat-btn ${allActive}" data-cat="">All categories<span class="count">${cats.reduce((s, c) => s + c.papers.length, 0)}</span></button>`;
-    html += visible.map(c => {
-      const active = state.cat === c.name ? "active" : "";
-      const empty = c.papers.length === 0 ? "empty" : "";
-      return `<button class="cat-btn ${active} ${empty}" data-cat="${escapeHtml(c.name)}">${escapeHtml(c.name)}<span class="count">${c.papers.length}</span></button>`;
-    }).join("");
+    let html = `<button class="cat-btn ${state.cat === null ? "active" : ""}" data-cat="">All categories<span class="count">${total}</span></button>`;
+    html += visible.map(c =>
+      `<button class="cat-btn ${state.cat === c.name ? "active" : ""} ${c.papers.length ? "" : "empty"}" data-cat="${esc(c.name)}">${esc(c.name)}<span class="count">${c.papers.length}</span></button>`
+    ).join("");
     catlistEl.innerHTML = html;
-    catlistEl.querySelectorAll(".cat-btn").forEach(b => {
-      b.addEventListener("click", () => {
-        state.cat = b.dataset.cat || null;
-        renderMain();
-        renderCatList();
-      });
-    });
+    catlistEl.querySelectorAll(".cat-btn").forEach(b =>
+      b.addEventListener("click", () => { state.cat = b.dataset.cat || null; renderMain(); renderCats(); }));
   }
 
-  function paperCard(p) {
+  function paperRow(p, showYear) {
     const links = [];
-    if (p.paper) links.push(`<a href="${escapeHtml(p.paper)}" target="_blank" rel="noopener">Paper</a>`);
-    if (p.code) links.push(`<a href="${escapeHtml(p.code)}" target="_blank" rel="noopener">Code</a>`);
-    if (p.homepage) links.push(`<a href="${escapeHtml(p.homepage)}" target="_blank" rel="noopener">Homepage</a>`);
-    if (p.project) links.push(`<a href="${escapeHtml(p.project)}" target="_blank" rel="noopener">Project</a>`);
-    if (p.dataset) links.push(`<a href="${escapeHtml(p.dataset)}" target="_blank" rel="noopener">Dataset</a>`);
-    return `<div class="card">
-      <h4>${escapeHtml(p.title || "(untitled)")}</h4>
-      <div class="links">${links.join("")}</div>
-    </div>`;
+    if (p.paper) links.push(`<a href="${esc(p.paper)}" target="_blank" rel="noopener">Paper</a>`);
+    if (p.code) links.push(`<a href="${esc(p.code)}" target="_blank" rel="noopener">Code</a>`);
+    if (p.homepage) links.push(`<a href="${esc(p.homepage)}" target="_blank" rel="noopener">Site</a>`);
+    if (p.dataset) links.push(`<a href="${esc(p.dataset)}" target="_blank" rel="noopener">Data</a>`);
+    if (p.demo) links.push(`<a href="${esc(p.demo)}" target="_blank" rel="noopener">Demo</a>`);
+    const yearChip = showYear ? `<span class="year-chip">${p.year}</span>` : "";
+    return `<li class="paper">
+      <span class="paper-title">${esc(p.title || "Untitled entry")}${yearChip}</span>
+      <span class="paper-links">${links.join("") || '<span class="nolink">no links</span>'}</span>
+    </li>`;
   }
 
   function renderMain() {
-    const cats = mergedCategories();
+    const cats = merged();
     const q = state.q.toLowerCase();
+    const showYear = state.year === "all";
 
     let groups = state.cat === null ? cats : cats.filter(c => c.name === state.cat);
-
     if (q) {
-      groups = groups
-        .map(c => {
-          const nameMatch = c.name.toLowerCase().includes(q);
-          const papers = nameMatch ? c.papers : c.papers.filter(p => (p.title || "").toLowerCase().includes(q));
-          return { name: c.name, papers };
-        })
-        .filter(c => c.papers.length > 0);
+      groups = groups.map(c => {
+        const nameMatch = c.name.toLowerCase().includes(q);
+        return { ...c, papers: nameMatch ? c.papers : c.papers.filter(p => (p.title || "").toLowerCase().includes(q)) };
+      }).filter(c => c.papers.length > 0);
+    } else if (state.cat === null) {
+      groups = groups.filter(c => c.papers.length > 0);
     }
 
+    const single = state.cat !== null && groups.length === 1;
     viewTitleEl.textContent = state.cat === null ? "All categories" : state.cat;
+    viewDescEl.textContent = single ? (groups[0].desc || "") : "Every open-source CVPR paper, indexed by research area and explained in plain English.";
+
     const totalPapers = groups.reduce((s, c) => s + c.papers.length, 0);
-    viewMetaEl.textContent = `${totalPapers} paper${totalPapers === 1 ? "" : "s"} · scope: ${state.year === "all" ? "2019–2025" : state.year}`;
+    viewMetaEl.innerHTML = `<b>${totalPapers}</b> paper${totalPapers === 1 ? "" : "s"} · ${groups.length} categor${groups.length === 1 ? "y" : "ies"} · ${state.year === "all" ? yearRange() : "CVPR " + state.year}`;
 
     if (groups.length === 0) {
-      resultsEl.innerHTML = `<p class="empty-msg">No results.</p>`;
+      resultsEl.innerHTML = `<p class="no-results">Nothing in the index matches “${esc(state.q)}”.</p>`;
       return;
     }
 
-    resultsEl.innerHTML = groups.map(c => {
-      if (c.papers.length === 0) {
-        return `<div class="cat-group"><h3>${escapeHtml(c.name)}</h3><p class="empty-msg">No papers listed yet for this category.</p></div>`;
-      }
-      return `<div class="cat-group">
-        <h3>${escapeHtml(c.name)}</h3>
-        <div class="papers">${c.papers.map(paperCard).join("")}</div>
-      </div>`;
-    }).join("");
+    resultsEl.innerHTML = groups.map(c => `
+      <section class="cat-group">
+        ${single ? "" : `<div class="cat-head">
+          <h3><a href="#" data-cat="${esc(c.name)}">${esc(c.name)}</a></h3>
+          ${c.desc ? `<p class="cat-desc">${esc(c.desc)}</p>` : ""}
+          <span class="cat-count">${c.papers.length} paper${c.papers.length === 1 ? "" : "s"}</span>
+        </div>`}
+        ${c.papers.length
+          ? `<ol class="paper-list">${c.papers.map(p => paperRow(p, showYear)).join("")}</ol>`
+          : `<p class="empty-note">No open-source papers recorded in this category yet.</p>`}
+      </section>`).join("");
+
+    resultsEl.querySelectorAll(".cat-head a").forEach(a =>
+      a.addEventListener("click", (e) => {
+        e.preventDefault();
+        state.cat = a.dataset.cat;
+        renderMain(); renderCats();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }));
   }
 
-  function renderAll() {
-    renderYearButtons();
-    renderCatList();
-    renderMain();
-  }
+  function renderAll() { renderYears(); renderCats(); renderMain(); }
 
+  let t;
   searchEl.addEventListener("input", () => {
-    state.q = searchEl.value;
-    renderCatList();
-    renderMain();
+    clearTimeout(t);
+    t = setTimeout(() => { state.q = searchEl.value.trim(); renderCats(); renderMain(); }, 120);
   });
 
-  fetch("data.json")
-    .then(r => r.json())
-    .then(data => {
-      YEARS = data;
-      renderAll();
-    })
-    .catch(err => {
-      resultsEl.innerHTML = `<p class="empty-msg">Failed to load data.json: ${escapeHtml(err.message)}</p>`;
-    });
+  fetch("data.json").then(r => r.json()).then(data => {
+    YEARS = data;
+    rangeEl.textContent = `${yearRange()} · ${YEARS.reduce((s, y) => s + y.categories.reduce((a, c) => a + c.papers.length, 0), 0)} papers indexed`;
+    renderAll();
+  }).catch(err => {
+    resultsEl.innerHTML = `<p class="no-results">Failed to load index: ${esc(err.message)}</p>`;
+  });
 })();

@@ -3,31 +3,43 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>CVPR Papers with Code — 2019–2025</title>
-<meta name="description" content="Index of CVPR papers with code, 2019–2025, searchable by category and year.">
+<title>CVPR Papers with Code · Annotated Index</title>
+<meta name="description" content="An annotated, searchable index of CVPR papers with open-source code, spanning every category with plain-English explanations.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600;9..144,900&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">◐</button>
+
 <div class="app">
   <aside class="sidebar">
-    <div class="brand">
-      <h1>CVPR Papers<span>with Code</span></h1>
-      <p class="sub">2019 – 2025 index</p>
+    <div class="masthead">
+      <p class="masthead-kicker">The Annotated Index</p>
+      <h1>CVPR<br><em>Papers with Code</em></h1>
+      <p class="masthead-range" id="mastheadRange"></p>
     </div>
 
-    <div class="years" id="years"></div>
+    <div class="years" id="years" role="tablist" aria-label="Conference year"></div>
 
-    <input id="search" class="search" type="search" placeholder="Search categories or titles…" autocomplete="off">
+    <div class="search-wrap">
+      <input id="search" class="search" type="search" placeholder="search the index…" autocomplete="off" spellcheck="false">
+    </div>
 
-    <nav id="catlist" class="catlist"></nav>
+    <nav id="catlist" class="catlist" aria-label="Categories"></nav>
+
+    <footer class="sidebar-foot">
+      <p>Curated from <a href="https://github.com/amusi" target="_blank" rel="noopener">amusi</a>'s conference lists.<br>Rebuilt as an English index.</p>
+    </footer>
   </aside>
 
   <main class="content">
     <header class="content-header">
-      <div>
-        <h2 id="viewTitle">All categories</h2>
-        <p id="viewMeta" class="meta"></p>
-      </div>
+      <h2 id="viewTitle">All categories</h2>
+      <p id="viewDesc" class="view-desc"></p>
+      <p id="viewMeta" class="view-meta"></p>
     </header>
     <div id="results" class="results"></div>
   </main>
