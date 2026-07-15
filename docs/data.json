@@ -3,7 +3,7 @@
   "year": "2019",
   "categories": [
    {
-    "name": "目标检测",
+    "name": "Object Detection",
     "papers": [
      {
       "title": "Bounding Box Regression with Uncertainty for Accurate Object Detection"
@@ -11,7 +11,7 @@
     ]
    },
    {
-    "name": "目标跟踪",
+    "name": "Object Tracking",
     "papers": [
      {
       "title": "Fast Online Object Tracking and Segmentation: A Unifying Approach"
@@ -25,7 +25,7 @@
     ]
    },
    {
-    "name": "语义分割",
+    "name": "Semantic Segmentation",
     "papers": [
      {
       "title": "Decoders Matter for Semantic Segmentation: Data-Dependent Decoding Enables Flexible Feature Aggregation"
@@ -39,7 +39,7 @@
     ]
    },
    {
-    "name": "实例分割",
+    "name": "Instance Segmentation",
     "papers": [
      {
       "title": "Mask Scoring R-CNN"
@@ -55,7 +55,7 @@
     ]
    },
    {
-    "name": "人脸检测",
+    "name": "Face Detection",
     "papers": [
      {
       "title": "DSFD: Dual Shot Face Detector"
@@ -63,7 +63,7 @@
     ]
    },
    {
-    "name": "人体姿态估计",
+    "name": "Human Pose Estimation",
     "papers": [
      {
       "title": "Deep High-Resolution Representation Learning for Human Pose Estimation"
@@ -79,7 +79,7 @@
     ]
    },
    {
-    "name": "头部姿态估计",
+    "name": "Head Pose Estimation",
     "papers": [
      {
       "title": "PVNet: Pixel-wise Voting Network for 6DoF Pose Estimation"
@@ -87,7 +87,7 @@
     ]
    },
    {
-    "name": "人群密度估计",
+    "name": "Crowd Density Estimation",
     "papers": [
      {
       "title": "Learning from Synthetic Data for Crowd Counting in the Wild"
@@ -114,7 +114,7 @@
     ]
    },
    {
-    "name": "图像分类",
+    "name": "Image Classification",
     "papers": [
      {
       "title": "Interpretable and Accurate Fine-grained Recognition via Region Grouping"
@@ -128,7 +128,7 @@
     ]
    },
    {
-    "name": "视频分类",
+    "name": "Video Classification",
     "papers": [
      {
       "title": "SmallBigNet: Integrating Core and Contextual Views for Video Classification"
@@ -136,7 +136,7 @@
     ]
    },
    {
-    "name": "目标检测",
+    "name": "Object Detection",
     "papers": [
      {
       "title": "Overcoming Classifier Imbalance for Long-tail Object Detection with Balanced Group Softmax"
@@ -314,7 +314,7 @@
     ]
    },
    {
-    "name": "视频目标检测",
+    "name": "Video Object Detection",
     "papers": [
      {
       "title": "Memory Enhanced Global-Local Aggregation for Video Object Detection"
@@ -322,7 +322,7 @@
     ]
    },
    {
-    "name": "目标跟踪",
+    "name": "Object Tracking",
     "papers": [
      {
       "title": "SiamCAR: Siamese Fully Convolutional Classification and Regression for Visual Tracking"
@@ -357,7 +357,7 @@
     ]
    },
    {
-    "name": "多目标跟踪",
+    "name": "Multi-Object Tracking",
     "papers": [
      {
       "title": "3D-ZeF: A 3D Zebrafish Tracking Benchmark Dataset"
@@ -365,7 +365,7 @@
     ]
    },
    {
-    "name": "语义分割",
+    "name": "Semantic Segmentation",
     "papers": [
      {
       "title": "FDA: Fourier Domain Adaptation for Semantic Segmentation"
@@ -409,7 +409,7 @@
     ]
    },
    {
-    "name": "实例分割",
+    "name": "Instance Segmentation",
     "papers": [
      {
       "title": "D2Det: Towards High Quality Object Detection and Instance Segmentation"
@@ -432,7 +432,7 @@
     ]
    },
    {
-    "name": "全景分割",
+    "name": "Panoptic Segmentation",
     "papers": [
      {
       "title": "Video Panoptic Segmentation"
@@ -446,7 +446,7 @@
     ]
    },
    {
-    "name": "视频目标分割",
+    "name": "Video Object Segmentation",
     "papers": [
      {
       "title": "A Transductive Approach for Video Object Segmentation"
@@ -463,7 +463,7 @@
     ]
    },
    {
-    "name": "超像素分割",
+    "name": "Superpixel Segmentation",
     "papers": [
      {
       "title": "Superpixel Segmentation with Fully Convolutional Networks"
@@ -471,7 +471,7 @@
     ]
    },
    {
-    "name": "交互式图像分割",
+    "name": "Interactive Image Segmentation",
     "papers": [
      {
       "title": "Interactive Object Segmentation with Inside-Outside Guidance"
@@ -561,7 +561,7 @@
     "papers": []
    },
    {
-    "name": "其他",
+    "name": "Others",
     "papers": [
      {
       "title": "An Efficient PointLSTM for Point Clouds Based Gesture Recognition"
@@ -692,11 +692,11 @@
     ]
    },
    {
-    "name": "人脸",
+    "name": "Face",
     "papers": []
    },
    {
-    "name": "人脸识别",
+    "name": "Face Recognition",
     "papers": [
      {
       "title": "CurricularFace: Adaptive Curriculum Learning Loss for Deep Face Recognition"
@@ -707,11 +707,11 @@
     ]
    },
    {
-    "name": "人脸检测",
+    "name": "Face Detection",
     "papers": []
    },
    {
-    "name": "人脸活体检测",
+    "name": "Face Anti-Spoofing",
     "papers": [
      {
       "title": "Searching Central Difference Convolutional Networks for Face Anti-Spoofing"
@@ -719,7 +719,7 @@
     ]
    },
    {
-    "name": "人脸表情识别",
+    "name": "Facial Expression Recognition",
     "papers": [
      {
       "title": "Suppressing Uncertainties for Large-Scale Facial Expression Recognition"
@@ -727,7 +727,7 @@
     ]
    },
    {
-    "name": "人脸转正",
+    "name": "Face Frontalization",
     "papers": [
      {
       "title": "Rotate-and-Render: Unsupervised Photorealistic Face Rotation from Single-View Images"
@@ -756,7 +756,7 @@
     ]
    },
    {
-    "name": "人体解析",
+    "name": "Human Parsing",
     "papers": [
      {
       "title": "Correlating Edge, Pose with Parsing"
@@ -764,7 +764,7 @@
     ]
    },
    {
-    "name": "场景文本检测",
+    "name": "Scene Text Detection",
     "papers": [
      {
       "title": "STEFANN: Scene Text Editor using Font Adaptive Neural Network"
@@ -784,7 +784,7 @@
     ]
    },
    {
-    "name": "场景文本识别",
+    "name": "Scene Text Recognition",
     "papers": [
      {
       "title": "SEED: Semantics Enhanced Encoder-Decoder Framework for Scene Text Recognition"
@@ -801,7 +801,7 @@
     ]
    },
    {
-    "name": "特征(点)检测和描述",
+    "name": "Feature (Point) Detection and Description",
     "papers": [
      {
       "title": "SuperGlue: Learning Feature Matching with Graph Neural Networks"
@@ -809,11 +809,11 @@
     ]
    },
    {
-    "name": "超分辨率",
+    "name": "Super-Resolution",
     "papers": []
    },
    {
-    "name": "图像超分辨率",
+    "name": "Image Super-Resolution",
     "papers": [
      {
       "title": "Closed-Loop Matters: Dual Regression Networks for Single Image Super-Resolution"
@@ -833,7 +833,7 @@
     ]
    },
    {
-    "name": "视频超分辨率",
+    "name": "Video Super-Resolution",
     "papers": [
      {
       "title": "TDAN: Temporally-Deformable Alignment Network for Video Super-Resolution"
@@ -897,7 +897,7 @@
     ]
    },
    {
-    "name": "基于骨架的动作识别",
+    "name": "Skeleton-Based Action Recognition",
     "papers": [
      {
       "title": "Disentangling and Unifying Graph Convolutions for Skeleton-Based Action Recognition"
@@ -905,11 +905,11 @@
     ]
    },
    {
-    "name": "人群计数",
+    "name": "Crowd Counting",
     "papers": []
    },
    {
-    "name": "深度估计",
+    "name": "Depth Estimation",
     "papers": [
      {
       "title": "BiFuse: Monocular 360◦ Depth Estimation via Bi-Projection Fusion"
@@ -929,7 +929,7 @@
     ]
    },
    {
-    "name": "单目深度估计",
+    "name": "Monocular Depth Estimation",
     "papers": [
      {
       "title": "On the uncertainty of self-supervised monocular depth estimation"
@@ -960,7 +960,7 @@
     ]
    },
    {
-    "name": "手势估计",
+    "name": "Hand Pose Estimation",
     "papers": [
      {
       "title": "HOPE-Net: A Graph-based Model for Hand-Object Pose Estimation"
@@ -971,7 +971,7 @@
     ]
    },
    {
-    "name": "显著性检测",
+    "name": "Saliency Detection",
     "papers": [
      {
       "title": "JL-DCF: Joint Learning and Densely-Cooperative Fusion Framework for RGB-D Salient Object Detection"
@@ -982,7 +982,7 @@
     ]
    },
    {
-    "name": "去噪",
+    "name": "Denoising",
     "papers": [
      {
       "title": "A Physics-based Noise Formation Model for Extreme Low-light Raw Denoising"
@@ -993,7 +993,7 @@
     ]
    },
    {
-    "name": "去雨",
+    "name": "Deraining",
     "papers": [
      {
       "title": "Multi-Scale Progressive Fusion Network for Single Image Deraining"
@@ -1004,11 +1004,11 @@
     ]
    },
    {
-    "name": "去模糊",
+    "name": "Deblurring",
     "papers": []
    },
    {
-    "name": "视频去模糊",
+    "name": "Video Deblurring",
     "papers": [
      {
       "title": "Cascaded Deep Video Deblurring Using Temporal Sharpness Prior"
@@ -1016,7 +1016,7 @@
     ]
    },
    {
-    "name": "去雾",
+    "name": "Dehazing",
     "papers": [
      {
       "title": "Domain Adaptation for Image Dehazing"
@@ -1027,7 +1027,7 @@
     ]
    },
    {
-    "name": "特征点检测与描述",
+    "name": "Feature Point Detection and Description",
     "papers": [
      {
       "title": "ASLFeat: Learning Local Features of Accurate Shape and Localization"
@@ -1051,7 +1051,7 @@
     ]
    },
    {
-    "name": "视觉语言导航",
+    "name": "Vision-Language Navigation",
     "papers": [
      {
       "title": "Towards Learning a Generic Agent for Vision-and-Language Navigation via Pre-training"
@@ -1059,7 +1059,7 @@
     ]
    },
    {
-    "name": "视频压缩",
+    "name": "Video Compression",
     "papers": [
      {
       "title": "Learning for Video Compression with Hierarchical Quality and Recurrent Enhancement"
@@ -1067,7 +1067,7 @@
     ]
    },
    {
-    "name": "视频插帧",
+    "name": "Video Frame Interpolation",
     "papers": [
      {
       "title": "AdaCoF: Adaptive Collaboration of Flows for Video Frame Interpolation"
@@ -1090,7 +1090,7 @@
     ]
    },
    {
-    "name": "风格迁移",
+    "name": "Style Transfer",
     "papers": [
      {
       "title": "Diversified Arbitrary Style Transfer via Deep Feature Perturbation"
@@ -1101,7 +1101,7 @@
     ]
    },
    {
-    "name": "车道线检测",
+    "name": "Lane Detection",
     "papers": [
      {
       "title": "Inter-Region Affinity Distillation for Road Marking Segmentation"
@@ -1126,7 +1126,7 @@
     ]
    },
    {
-    "name": "轨迹预测",
+    "name": "Trajectory Prediction",
     "papers": [
      {
       "title": "The Garden of Forking Paths: Towards Multi-Future Trajectory Prediction"
@@ -1137,7 +1137,7 @@
     ]
    },
    {
-    "name": "运动预测",
+    "name": "Motion Prediction",
     "papers": [
      {
       "title": "Collaborative Motion Prediction via Neural Motion Message Passing"
@@ -1148,7 +1148,7 @@
     ]
    },
    {
-    "name": "光流估计",
+    "name": "Optical Flow Estimation",
     "papers": [
      {
       "title": "Learning by Analogy: Reliable Supervision from Transformations for Unsupervised Optical Flow Estimation"
@@ -1156,7 +1156,7 @@
     ]
    },
    {
-    "name": "图像检索",
+    "name": "Image Retrieval",
     "papers": [
      {
       "title": "Evade Deep Image Retrieval by Stashing Private Images in the Hash Space"
@@ -1164,7 +1164,7 @@
     ]
    },
    {
-    "name": "虚拟试衣",
+    "name": "Virtual Try-On",
     "papers": [
      {
       "title": "Towards Photo-Realistic Virtual Try-On by Adaptively Generating↔Preserving Image Content"
@@ -1180,7 +1180,7 @@
     ]
    },
    {
-    "name": "对抗样本",
+    "name": "Adversarial Examples",
     "papers": [
      {
       "title": "Enhancing Cross-Task Black-Box Transferability of Adversarial Examples With Dispersion Reduction"
@@ -1191,7 +1191,7 @@
     ]
    },
    {
-    "name": "三维重建",
+    "name": "3D Reconstruction",
     "papers": [
      {
       "title": "Unsupervised Learning of Probably Symmetric Deformable 3D Objects from Images in the Wild"
@@ -1205,7 +1205,7 @@
     ]
    },
    {
-    "name": "深度补全",
+    "name": "Depth Completion",
     "papers": [
      {
       "title": "Uncertainty-Aware CNNs for Depth Completion: Uncertainty from Beginning to End"
@@ -1213,7 +1213,7 @@
     ]
    },
    {
-    "name": "语义场景补全",
+    "name": "Semantic Scene Completion",
     "papers": [
      {
       "title": "3D Sketch-aware Semantic Scene Completion via Semi-supervised Structure Prior"
@@ -1221,7 +1221,7 @@
     ]
    },
    {
-    "name": "线框解析",
+    "name": "Wireframe Parsing",
     "papers": [
      {
       "title": "Holistically-Attracted Wireframe Parser"
@@ -1229,7 +1229,7 @@
     ]
    },
    {
-    "name": "数据集",
+    "name": "Datasets",
     "papers": [
      {
       "title": "OASIS: A Large-Scale Dataset for Single Image 3D in the Wild"
@@ -1315,7 +1315,7 @@
     ]
    },
    {
-    "name": "不确定中没中",
+    "name": "Uncertain / Unconfirmed",
     "papers": [
      {
       "title": "FADNet: A Fast and Accurate Network for Disparity Estimation"
@@ -2078,7 +2078,7 @@
     ]
    },
    {
-    "name": "旋转目标检测",
+    "name": "Rotated Object Detection",
     "papers": [
      {
       "title": "23. Dense Label Encoding for Boundary Discontinuity Free Rotation Detection",
@@ -2160,7 +2160,7 @@
     ]
    },
    {
-    "name": "半监督目标检测",
+    "name": "Semi-Supervised Object Detection",
     "papers": [
      {
       "title": "37. Points As Queries: Weakly Semi-Supervised Object Detection by Points]",
@@ -2196,7 +2196,7 @@
     ]
    },
    {
-    "name": "域自适应目标检测",
+    "name": "Domain-Adaptive Object Detection",
     "papers": [
      {
       "title": "44. Domain-Specific Suppression for Adaptive Object Detection",
@@ -2218,7 +2218,7 @@
     ]
    },
    {
-    "name": "自监督目标检测",
+    "name": "Self-Supervised Object Detection",
     "papers": [
      {
       "title": "48. There Is More Than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking With Sound by Distilling Multimodal Knowledge",
@@ -2233,7 +2233,7 @@
     ]
    },
    {
-    "name": "弱监督目标检测",
+    "name": "Weakly-Supervised Object Detection",
     "papers": [
      {
       "title": "50. Informative and Consistent Correspondence Mining for Cross-Domain Weakly Supervised Object Detection",
@@ -2246,7 +2246,7 @@
     ]
    },
    {
-    "name": "其他",
+    "name": "Others",
     "papers": [
      {
       "title": "52. Open-Vocabulary Object Detection Using Captions",
@@ -2312,6 +2312,229 @@
      {
       "title": "65. Neural Auto-Exposure for High-Dynamic Range Object Detection",
       "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Onzon_Neural_Auto-Exposure_for_High-Dynamic_Range_Object_Detection_CVPR_2021_paper.html"
+     },
+     {
+      "title": "33. Continual Semantic Segmentation via Repulsion-Attraction of Sparse and Disentangled Latent Representations",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Michieli_Continual_Semantic_Segmentation_via_Repulsion-Attraction_of_Sparse_and_Disentangled_Latent_CVPR_2021_paper.html",
+      "code": "https://lttm.dei.unipd.it/paper_data/SDR/"
+     },
+     {
+      "title": "34. Exploit Visual Dependency Relations for Semantic Segmentation",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Liu_Exploit_Visual_Dependency_Relations_for_Semantic_Segmentation_CVPR_2021_paper.html"
+     },
+     {
+      "title": "35. Revisiting Superpixels for Active Learning in Semantic Segmentation With Realistic Annotation Costs",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Cai_Revisiting_Superpixels_for_Active_Learning_in_Semantic_Segmentation_With_Realistic_CVPR_2021_paper.html"
+     },
+     {
+      "title": "36. PLOP: Learning without Forgetting for Continual Semantic Segmentation",
+      "paper": "https://arxiv.org/abs/2011.11390",
+      "code": "https://github.com/arthurdouillard/CVPR2021_PLOP"
+     },
+     {
+      "title": "37. 3D-to-2D Distillation for Indoor Scene Parsing",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Liu_3D-to-2D_Distillation_for_Indoor_Scene_Parsing_CVPR_2021_paper.html"
+     },
+     {
+      "title": "38. Bidirectional Projection Network for Cross Dimension Scene Understanding",
+      "code": "https://github.com/wbhu/BPNet"
+     },
+     {
+      "title": "39. PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Li_PointFlow_Flowing_Semantics_Through_Points_for_Aerial_Image_Segmentation_CVPR_2021_paper.html",
+      "code": "https://github.com/lxtGH/PFSegNets"
+     },
+     {
+      "title": "Fast and Accurate Model Scaling",
+      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Dollar_Fast_and_Accurate_Model_Scaling_CVPR_2021_paper.html",
+      "code": "https://github.com/facebookresearch/pycls"
+     },
+     {
+      "title": "Learning High Fidelity Depths of Dressed Humans by Watching Social Media Dance Videos",
+      "homepage": "https://www.yasamin.page/hdnet_tiktok",
+      "code": "https://github.com/yasaminjafarian/HDNet_TikTok",
+      "dataset": "https://www.yasamin.page/hdnet_tiktok#h.jr9ifesshn7v"
+     },
+     {
+      "title": "Omnimatte: Associating Objects and Their Effects in Video",
+      "homepage": "https://omnimatte.github.io/",
+      "code": "https://omnimatte.github.io/#code"
+     },
+     {
+      "title": "Towards Good Practices for Efficiently Annotating Large-Scale Image Classification Datasets",
+      "homepage": "https://fidler-lab.github.io/efficient-annotation-cookbook/",
+      "code": "https://github.com/fidler-lab/efficient-annotation-cookbook"
+     },
+     {
+      "title": "Motion Representations for Articulated Animation",
+      "paper": "https://arxiv.org/abs/2104.11280",
+      "code": "https://github.com/snap-research/articulated-animation"
+     },
+     {
+      "title": "Deep Lucas-Kanade Homography for Multimodal Image Alignment",
+      "paper": "https://arxiv.org/abs/2104.11693",
+      "code": "https://github.com/placeforyiming/CVPR21-Deep-Lucas-Kanade-Homography"
+     },
+     {
+      "title": "Skip-Convolutions for Efficient Video Processing",
+      "paper": "https://arxiv.org/abs/2104.11487"
+     },
+     {
+      "title": "KeypointDeformer: Unsupervised 3D Keypoint Discovery for Shape Control",
+      "homepage": "http://tomasjakab.github.io/KeypointDeformer",
+      "code": "https://github.com/tomasjakab/keypoint_deformer/"
+     },
+     {
+      "title": "Learning To Count Everything",
+      "paper": "https://arxiv.org/abs/2104.08391",
+      "code": "https://github.com/cvlab-stonybrook/LearningToCountEverything",
+      "dataset": "https://github.com/cvlab-stonybrook/LearningToCountEverything"
+     },
+     {
+      "title": "SOLD2: Self-supervised Occlusion-aware Line Description and Detection",
+      "code": "https://github.com/cvg/SOLD2"
+     },
+     {
+      "title": "Learning Probabilistic Ordinal Embeddings for Uncertainty-Aware Regression",
+      "homepage": "https://li-wanhua.github.io/POEs/",
+      "paper": "https://arxiv.org/abs/2103.13629",
+      "code": "https://github.com/Li-Wanhua/POEs"
+     },
+     {
+      "title": "LEAP: Learning Articulated Occupancy of People",
+      "paper": "https://arxiv.org/abs/2104.06849"
+     },
+     {
+      "title": "Visual Semantic Role Labeling for Video Understanding",
+      "homepage": "https://vidsitu.org/",
+      "paper": "https://arxiv.org/abs/2104.00990",
+      "code": "https://github.com/TheShadow29/VidSitu",
+      "dataset": "https://github.com/TheShadow29/VidSitu"
+     },
+     {
+      "title": "UAV-Human: A Large Benchmark for Human Behavior Understanding with Unmanned Aerial Vehicles",
+      "paper": "https://arxiv.org/abs/2104.00946",
+      "code": "https://github.com/SUTDCV/UAV-Human"
+     },
+     {
+      "title": "Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning"
+     },
+     {
+      "title": "Fully Understanding Generic Objects: Modeling, Segmentation, and Reconstruction",
+      "paper": "https://arxiv.org/abs/2104.00858"
+     },
+     {
+      "title": "Towards High Fidelity Face Relighting with Realistic Shadows",
+      "paper": "https://arxiv.org/abs/2104.00825"
+     },
+     {
+      "title": "BRepNet: A topological message passing system for solid models"
+     },
+     {
+      "title": "Visually Informed Binaural Audio Generation without Binaural Audios",
+      "homepage": "https://sheldontsui.github.io/projects/PseudoBinaural"
+     },
+     {
+      "title": "Exploring intermediate representation for monocular vehicle pose estimation",
+      "code": "https://github.com/Nicholasli1995/EgoNet"
+     },
+     {
+      "title": "Tuning IR-cut Filter for Illumination-aware Spectral Reconstruction from RGB"
+     },
+     {
+      "title": "Invertible Image Signal Processing",
+      "paper": "https://arxiv.org/abs/2103.15061",
+      "code": "https://github.com/yzxing87/Invertible-ISP"
+     },
+     {
+      "title": "Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling",
+      "paper": "https://arxiv.org/abs/2103.14858"
+     },
+     {
+      "title": "SceneGraphFusion: Incremental 3D Scene Graph Prediction from RGB-D Sequences",
+      "paper": "https://arxiv.org/abs/2103.14898"
+     },
+     {
+      "title": "Embedding Transfer with Label Relaxation for Improved Metric Learning",
+      "paper": "https://arxiv.org/abs/2103.14908"
+     },
+     {
+      "title": "Picasso: A CUDA-based Library for Deep Learning over 3D Meshes",
+      "paper": "https://arxiv.org/abs/2103.15076",
+      "code": "https://github.com/hlei-ziyan/Picasso"
+     },
+     {
+      "title": "Meta-Mining Discriminative Samples for Kinship Verification",
+      "paper": "https://arxiv.org/abs/2103.15108"
+     },
+     {
+      "title": "Cloud2Curve: Generation and Vectorization of Parametric Sketches",
+      "paper": "https://arxiv.org/abs/2103.15536"
+     },
+     {
+      "title": "TrafficQA: A Question Answering Benchmark and an Efficient Network for Video Reasoning over Traffic Events",
+      "paper": "https://arxiv.org/abs/2103.15538",
+      "code": "https://github.com/SUTDCV/SUTD-TrafficQA"
+     },
+     {
+      "title": "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution",
+      "homepage": "http://wellyzhang.github.io/project/prae.html",
+      "paper": "https://arxiv.org/abs/2103.14230"
+     },
+     {
+      "title": "ACRE: Abstract Causal REasoning Beyond Covariation",
+      "homepage": "http://wellyzhang.github.io/project/acre.html",
+      "paper": "https://arxiv.org/abs/2103.14232"
+     },
+     {
+      "title": "Confluent Vessel Trees with Accurate Bifurcations",
+      "paper": "https://arxiv.org/abs/2103.14268"
+     },
+     {
+      "title": "Few-Shot Human Motion Transfer by Personalized Geometry and Texture Modeling",
+      "paper": "https://arxiv.org/abs/2103.14338",
+      "code": "https://github.com/HuangZhiChao95/FewShotMotionTransfer"
+     },
+     {
+      "title": "Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks",
+      "homepage": "https://paschalidoud.github.io/neural_parts",
+      "code": "https://github.com/paschalidoud/neural_parts"
+     },
+     {
+      "title": "Knowledge Evolution in Neural Networks",
+      "code": "https://github.com/ahmdtaha/knowledge_evolution"
+     },
+     {
+      "title": "Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning",
+      "paper": "https://arxiv.org/abs/2103.02148",
+      "code": "https://github.com/guopengf/FLMRCM"
+     },
+     {
+      "title": "SGP: Self-supervised Geometric Perception",
+      "paper": "https://arxiv.org/abs/2103.03114",
+      "code": "https://github.com/theNded/SGP"
+     },
+     {
+      "title": "Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning",
+      "paper": "https://arxiv.org/abs/2103.02148",
+      "code": "https://github.com/guopengf/FLMRCM"
+     },
+     {
+      "title": "Diffusion Probabilistic Models for 3D Point Cloud Generation",
+      "paper": "https://arxiv.org/abs/2103.01458",
+      "code": "https://github.com/luost26/diffusion-point-cloud"
+     },
+     {
+      "title": "Scan2Cap: Context-aware Dense Captioning in RGB-D Scans",
+      "paper": "https://arxiv.org/abs/2012.02206",
+      "code": "https://github.com/daveredrum/Scan2Cap",
+      "dataset": "https://github.com/daveredrum/ScanRefer"
+     },
+     {
+      "title": "There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge",
+      "paper": "https://arxiv.org/abs/2103.01353",
+      "code": "http://rl.uni-freiburg.de/research/multimodal-distill",
+      "dataset": "http://rl.uni-freiburg.de/research/multimodal-distill"
      }
     ]
    },
@@ -2320,7 +2543,7 @@
     "papers": []
    },
    {
-    "name": "单目标跟踪",
+    "name": "Single Object Tracking",
     "papers": [
      {
       "title": "LightTrack: Finding Lightweight Neural Networks for Object Tracking via One-Shot Architecture Search",
@@ -2362,7 +2585,7 @@
     ]
    },
    {
-    "name": "多目标跟踪",
+    "name": "Multi-Object Tracking",
     "papers": [
      {
       "title": "Tracking Pedestrian Heads in Dense Crowd",
@@ -2435,7 +2658,7 @@
     ]
    },
    {
-    "name": "弱监督语义分割",
+    "name": "Weakly-Supervised Semantic Segmentation",
     "papers": [
      {
       "title": "9. Railroad Is Not a Train: Saliency As Pseudo-Pixel Supervision for Weakly Supervised Semantic Segmentation",
@@ -2465,7 +2688,7 @@
     ]
    },
    {
-    "name": "半监督语义分割",
+    "name": "Semi-Supervised Semantic Segmentation",
     "papers": [
      {
       "title": "14. Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision",
@@ -2493,7 +2716,7 @@
     ]
    },
    {
-    "name": "域自适应语义分割",
+    "name": "Domain-Adaptive Semantic Segmentation",
     "papers": [
      {
       "title": "19. Cluster, Split, Fuse, and Update: Meta-Learning for Open Compound Domain Adaptive Semantic Segmentation",
@@ -2544,7 +2767,7 @@
     ]
    },
    {
-    "name": "无监督语义分割",
+    "name": "Unsupervised Semantic Segmentation",
     "papers": [
      {
       "title": "31. PiCIE: Unsupervised Semantic Segmentation Using Invariance and Equivariance in Clustering",
@@ -2553,48 +2776,12 @@
     ]
    },
    {
-    "name": "视频语义分割",
+    "name": "Video Semantic Segmentation",
     "papers": [
      {
       "title": "32. VSPW: A Large-scale Dataset for Video Scene Parsing in the Wild",
       "homepage": "https://www.vspwdataset.com/",
       "paper": "https://www.vspwdataset.com/CVPR2021__miao.pdf"
-     }
-    ]
-   },
-   {
-    "name": "其它",
-    "papers": [
-     {
-      "title": "33. Continual Semantic Segmentation via Repulsion-Attraction of Sparse and Disentangled Latent Representations",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Michieli_Continual_Semantic_Segmentation_via_Repulsion-Attraction_of_Sparse_and_Disentangled_Latent_CVPR_2021_paper.html",
-      "code": "https://lttm.dei.unipd.it/paper_data/SDR/"
-     },
-     {
-      "title": "34. Exploit Visual Dependency Relations for Semantic Segmentation",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Liu_Exploit_Visual_Dependency_Relations_for_Semantic_Segmentation_CVPR_2021_paper.html"
-     },
-     {
-      "title": "35. Revisiting Superpixels for Active Learning in Semantic Segmentation With Realistic Annotation Costs",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Cai_Revisiting_Superpixels_for_Active_Learning_in_Semantic_Segmentation_With_Realistic_CVPR_2021_paper.html"
-     },
-     {
-      "title": "36. PLOP: Learning without Forgetting for Continual Semantic Segmentation",
-      "paper": "https://arxiv.org/abs/2011.11390",
-      "code": "https://github.com/arthurdouillard/CVPR2021_PLOP"
-     },
-     {
-      "title": "37. 3D-to-2D Distillation for Indoor Scene Parsing",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Liu_3D-to-2D_Distillation_for_Indoor_Scene_Parsing_CVPR_2021_paper.html"
-     },
-     {
-      "title": "38. Bidirectional Projection Network for Cross Dimension Scene Understanding",
-      "code": "https://github.com/wbhu/BPNet"
-     },
-     {
-      "title": "39. PointFlow: Flowing Semantics Through Points for Aerial Image Segmentation",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Li_PointFlow_Flowing_Semantics_Through_Points_for_Aerial_Image_Segmentation_CVPR_2021_paper.html",
-      "code": "https://github.com/lxtGH/PFSegNets"
      }
     ]
    },
@@ -2648,7 +2835,7 @@
     ]
    },
    {
-    "name": "视频实例分割",
+    "name": "Video Instance Segmentation",
     "papers": [
      {
       "title": "STMask: Spatial Feature Calibration and Temporal Fusion for Effective One-stage Video Instance Segmentation",
@@ -2703,7 +2890,7 @@
     ]
    },
    {
-    "name": "医学图像分割",
+    "name": "Medical Image Segmentation",
     "papers": [
      {
       "title": "1. Learning Calibrated Medical Image Segmentation via Multi-Rater Agreement Modeling",
@@ -3051,7 +3238,7 @@
     ]
    },
    {
-    "name": "图像压缩",
+    "name": "Image Compression",
     "papers": [
      {
       "title": "Checkerboard Context Model for Efficient Learned Image Compression",
@@ -3078,7 +3265,7 @@
     ]
    },
    {
-    "name": "模型剪枝",
+    "name": "Model Pruning",
     "papers": [
      {
       "title": "Dynamic Slimmable Network",
@@ -3088,7 +3275,7 @@
     ]
    },
    {
-    "name": "模型量化",
+    "name": "Model Quantization",
     "papers": [
      {
       "title": "Network Quantization with Element-wise Gradient Scaling",
@@ -3154,7 +3341,7 @@
     ]
    },
    {
-    "name": "视频超分辨率",
+    "name": "Video Super-Resolution",
     "papers": [
      {
       "title": "Temporal Modulation Network for Controllable Space-Time Video Super-Resolution",
@@ -3456,7 +3643,7 @@
     ]
    },
    {
-    "name": "相机姿态估计",
+    "name": "Camera Pose Estimation",
     "papers": [
      {
       "title": "Back to the Feature: Learning Robust Camera Localization from Pixels to Pose",
@@ -3832,7 +4019,7 @@
       "title": "Parser-Free Virtual Try-on via Distilling Appearance Flows"
      },
      {
-      "title": "基于外观流蒸馏的无需人体解析的虚拟换装",
+      "title": "Parser-Free Virtual Try-On via Distilling Appearance Flows",
       "paper": "https://arxiv.org/abs/2103.04559",
       "code": "https://github.com/geyuying/PF-AFN"
      }
@@ -3967,203 +4154,6 @@
       "homepage": "http://rl.uni-freiburg.de/research/multimodal-distill",
       "paper": "https://arxiv.org/abs/2103.01353",
       "code": "http://rl.uni-freiburg.de/research/multimodal-distill"
-     },
-     {
-      "title": "Scan2Cap: Context-aware Dense Captioning in RGB-D Scans",
-      "paper": "https://arxiv.org/abs/2012.02206",
-      "code": "https://github.com/daveredrum/Scan2Cap",
-      "dataset": "https://github.com/daveredrum/ScanRefer"
-     },
-     {
-      "title": "There is More than Meets the Eye: Self-Supervised Multi-Object Detection and Tracking with Sound by Distilling Multimodal Knowledge",
-      "paper": "https://arxiv.org/abs/2103.01353",
-      "code": "http://rl.uni-freiburg.de/research/multimodal-distill",
-      "dataset": "http://rl.uni-freiburg.de/research/multimodal-distill"
-     }
-    ]
-   },
-   {
-    "name": "Others",
-    "papers": [
-     {
-      "title": "Fast and Accurate Model Scaling",
-      "paper": "https://openaccess.thecvf.com/content/CVPR2021/html/Dollar_Fast_and_Accurate_Model_Scaling_CVPR_2021_paper.html",
-      "code": "https://github.com/facebookresearch/pycls"
-     },
-     {
-      "title": "Learning High Fidelity Depths of Dressed Humans by Watching Social Media Dance Videos",
-      "homepage": "https://www.yasamin.page/hdnet_tiktok",
-      "code": "https://github.com/yasaminjafarian/HDNet_TikTok",
-      "dataset": "https://www.yasamin.page/hdnet_tiktok#h.jr9ifesshn7v"
-     },
-     {
-      "title": "Omnimatte: Associating Objects and Their Effects in Video",
-      "homepage": "https://omnimatte.github.io/",
-      "code": "https://omnimatte.github.io/#code"
-     },
-     {
-      "title": "Towards Good Practices for Efficiently Annotating Large-Scale Image Classification Datasets",
-      "homepage": "https://fidler-lab.github.io/efficient-annotation-cookbook/",
-      "code": "https://github.com/fidler-lab/efficient-annotation-cookbook"
-     },
-     {
-      "title": "Motion Representations for Articulated Animation",
-      "paper": "https://arxiv.org/abs/2104.11280",
-      "code": "https://github.com/snap-research/articulated-animation"
-     },
-     {
-      "title": "Deep Lucas-Kanade Homography for Multimodal Image Alignment",
-      "paper": "https://arxiv.org/abs/2104.11693",
-      "code": "https://github.com/placeforyiming/CVPR21-Deep-Lucas-Kanade-Homography"
-     },
-     {
-      "title": "Skip-Convolutions for Efficient Video Processing",
-      "paper": "https://arxiv.org/abs/2104.11487"
-     },
-     {
-      "title": "KeypointDeformer: Unsupervised 3D Keypoint Discovery for Shape Control",
-      "homepage": "http://tomasjakab.github.io/KeypointDeformer",
-      "code": "https://github.com/tomasjakab/keypoint_deformer/"
-     },
-     {
-      "title": "Learning To Count Everything",
-      "paper": "https://arxiv.org/abs/2104.08391",
-      "code": "https://github.com/cvlab-stonybrook/LearningToCountEverything",
-      "dataset": "https://github.com/cvlab-stonybrook/LearningToCountEverything"
-     },
-     {
-      "title": "SOLD2: Self-supervised Occlusion-aware Line Description and Detection",
-      "code": "https://github.com/cvg/SOLD2"
-     },
-     {
-      "title": "Learning Probabilistic Ordinal Embeddings for Uncertainty-Aware Regression",
-      "homepage": "https://li-wanhua.github.io/POEs/",
-      "paper": "https://arxiv.org/abs/2103.13629",
-      "code": "https://github.com/Li-Wanhua/POEs"
-     },
-     {
-      "title": "LEAP: Learning Articulated Occupancy of People",
-      "paper": "https://arxiv.org/abs/2104.06849"
-     },
-     {
-      "title": "Visual Semantic Role Labeling for Video Understanding",
-      "homepage": "https://vidsitu.org/",
-      "paper": "https://arxiv.org/abs/2104.00990",
-      "code": "https://github.com/TheShadow29/VidSitu",
-      "dataset": "https://github.com/TheShadow29/VidSitu"
-     },
-     {
-      "title": "UAV-Human: A Large Benchmark for Human Behavior Understanding with Unmanned Aerial Vehicles",
-      "paper": "https://arxiv.org/abs/2104.00946",
-      "code": "https://github.com/SUTDCV/UAV-Human"
-     },
-     {
-      "title": "Video Prediction Recalling Long-term Motion Context via Memory Alignment Learning"
-     },
-     {
-      "title": "Fully Understanding Generic Objects: Modeling, Segmentation, and Reconstruction",
-      "paper": "https://arxiv.org/abs/2104.00858"
-     },
-     {
-      "title": "Towards High Fidelity Face Relighting with Realistic Shadows",
-      "paper": "https://arxiv.org/abs/2104.00825"
-     },
-     {
-      "title": "BRepNet: A topological message passing system for solid models"
-     },
-     {
-      "title": "Visually Informed Binaural Audio Generation without Binaural Audios",
-      "homepage": "https://sheldontsui.github.io/projects/PseudoBinaural"
-     },
-     {
-      "title": "Exploring intermediate representation for monocular vehicle pose estimation",
-      "code": "https://github.com/Nicholasli1995/EgoNet"
-     },
-     {
-      "title": "Tuning IR-cut Filter for Illumination-aware Spectral Reconstruction from RGB"
-     },
-     {
-      "title": "Invertible Image Signal Processing",
-      "paper": "https://arxiv.org/abs/2103.15061",
-      "code": "https://github.com/yzxing87/Invertible-ISP"
-     },
-     {
-      "title": "Video Rescaling Networks with Joint Optimization Strategies for Downscaling and Upscaling",
-      "paper": "https://arxiv.org/abs/2103.14858"
-     },
-     {
-      "title": "SceneGraphFusion: Incremental 3D Scene Graph Prediction from RGB-D Sequences",
-      "paper": "https://arxiv.org/abs/2103.14898"
-     },
-     {
-      "title": "Embedding Transfer with Label Relaxation for Improved Metric Learning",
-      "paper": "https://arxiv.org/abs/2103.14908"
-     },
-     {
-      "title": "Picasso: A CUDA-based Library for Deep Learning over 3D Meshes",
-      "paper": "https://arxiv.org/abs/2103.15076",
-      "code": "https://github.com/hlei-ziyan/Picasso"
-     },
-     {
-      "title": "Meta-Mining Discriminative Samples for Kinship Verification",
-      "paper": "https://arxiv.org/abs/2103.15108"
-     },
-     {
-      "title": "Cloud2Curve: Generation and Vectorization of Parametric Sketches",
-      "paper": "https://arxiv.org/abs/2103.15536"
-     },
-     {
-      "title": "TrafficQA: A Question Answering Benchmark and an Efficient Network for Video Reasoning over Traffic Events",
-      "paper": "https://arxiv.org/abs/2103.15538",
-      "code": "https://github.com/SUTDCV/SUTD-TrafficQA"
-     },
-     {
-      "title": "Abstract Spatial-Temporal Reasoning via Probabilistic Abduction and Execution",
-      "homepage": "http://wellyzhang.github.io/project/prae.html",
-      "paper": "https://arxiv.org/abs/2103.14230"
-     },
-     {
-      "title": "ACRE: Abstract Causal REasoning Beyond Covariation",
-      "homepage": "http://wellyzhang.github.io/project/acre.html",
-      "paper": "https://arxiv.org/abs/2103.14232"
-     },
-     {
-      "title": "Confluent Vessel Trees with Accurate Bifurcations",
-      "paper": "https://arxiv.org/abs/2103.14268"
-     },
-     {
-      "title": "Few-Shot Human Motion Transfer by Personalized Geometry and Texture Modeling",
-      "paper": "https://arxiv.org/abs/2103.14338",
-      "code": "https://github.com/HuangZhiChao95/FewShotMotionTransfer"
-     },
-     {
-      "title": "Neural Parts: Learning Expressive 3D Shape Abstractions with Invertible Neural Networks",
-      "homepage": "https://paschalidoud.github.io/neural_parts",
-      "code": "https://github.com/paschalidoud/neural_parts"
-     },
-     {
-      "title": "Knowledge Evolution in Neural Networks",
-      "code": "https://github.com/ahmdtaha/knowledge_evolution"
-     },
-     {
-      "title": "Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning",
-      "paper": "https://arxiv.org/abs/2103.02148",
-      "code": "https://github.com/guopengf/FLMRCM"
-     },
-     {
-      "title": "SGP: Self-supervised Geometric Perception",
-      "paper": "https://arxiv.org/abs/2103.03114",
-      "code": "https://github.com/theNded/SGP"
-     },
-     {
-      "title": "Multi-institutional Collaborations for Improving Deep Learning-based Magnetic Resonance Image Reconstruction Using Federated Learning",
-      "paper": "https://arxiv.org/abs/2103.02148",
-      "code": "https://github.com/guopengf/FLMRCM"
-     },
-     {
-      "title": "Diffusion Probabilistic Models for 3D Point Cloud Generation",
-      "paper": "https://arxiv.org/abs/2103.01458",
-      "code": "https://github.com/luost26/diffusion-point-cloud"
      },
      {
       "title": "Scan2Cap: Context-aware Dense Captioning in RGB-D Scans",
@@ -4753,7 +4743,7 @@
     ]
    },
    {
-    "name": "半监督目标检测",
+    "name": "Semi-Supervised Object Detection",
     "papers": [
      {
       "title": "Dense Learning based Semi-Supervised Object Detection",
@@ -4777,7 +4767,7 @@
     ]
    },
    {
-    "name": "多模态目标跟踪",
+    "name": "Multi-Modal Object Tracking",
     "papers": [
      {
       "title": "Visible-Thermal UAV Tracking: A Large-Scale Benchmark and New Baseline",
@@ -4822,7 +4812,7 @@
     ]
    },
    {
-    "name": "弱监督语义分割",
+    "name": "Weakly-Supervised Semantic Segmentation",
     "papers": [
      {
       "title": "Class Re-Activation Maps for Weakly-Supervised Semantic Segmentation",
@@ -4861,7 +4851,7 @@
     ]
    },
    {
-    "name": "半监督语义分割",
+    "name": "Semi-Supervised Semantic Segmentation",
     "papers": [
      {
       "title": "ST++: Make Self-training Work Better for Semi-supervised Semantic Segmentation",
@@ -4882,7 +4872,7 @@
     ]
    },
    {
-    "name": "域自适应语义分割",
+    "name": "Domain-Adaptive Semantic Segmentation",
     "papers": [
      {
       "title": "Towards Fewer Annotations: Active Learning via Region Impurity and Prediction Uncertainty for Domain Adaptive Semantic Segmentation",
@@ -4897,7 +4887,7 @@
     ]
    },
    {
-    "name": "无监督语义分割",
+    "name": "Unsupervised Semantic Segmentation",
     "papers": [
      {
       "title": "GroupViT: Semantic Segmentation Emerges from Text Supervision",
@@ -4907,7 +4897,7 @@
     ]
    },
    {
-    "name": "少样本语义分割",
+    "name": "Few-Shot Semantic Segmentation",
     "papers": [
      {
       "title": "Generalized Few-shot Semantic Segmentation",
@@ -4943,7 +4933,7 @@
     ]
    },
    {
-    "name": "自监督实例分割",
+    "name": "Self-Supervised Instance Segmentation",
     "papers": [
      {
       "title": "FreeSOLO: Learning to Segment Objects without Annotations",
@@ -4953,7 +4943,7 @@
     ]
    },
    {
-    "name": "视频实例分割",
+    "name": "Video Instance Segmentation",
     "papers": [
      {
       "title": "Efficient Video Instance Segmentation via Tracklet Query and Proposal",
@@ -5355,7 +5345,7 @@
     "papers": []
    },
    {
-    "name": "单目深度估计",
+    "name": "Monocular Depth Estimation",
     "papers": [
      {
       "title": "NeW CRFs: Neural Window Fully-connected CRFs for Monocular Depth Estimation",
@@ -6575,12 +6565,7 @@
       "title": "Super-Resolution Neural Operator",
       "paper": "https://arxiv.org/abs/2303.02584",
       "code": "https://github.com/2y7c3/Super-Resolution-Neural-Operator"
-     }
-    ]
-   },
-   {
-    "name": "视频超分辨率",
-    "papers": [
+     },
      {
       "title": "Learning Trajectory-Aware Transformer for Video Super-Resolution",
       "paper": "https://arxiv.org/abs/2204.04216",
@@ -8307,6 +8292,400 @@
    {
     "name": "Others",
     "papers": []
+   }
+  ]
+ },
+ {
+  "year": "2026",
+  "categories": [
+   {
+    "name": "CVPR 2026",
+    "papers": []
+   },
+   {
+    "name": "3DGS(Gaussian Splatting)",
+    "papers": [
+     {
+      "title": "Dropping Anchor and Spherical Harmonics for Sparse-view Gaussian Splatting",
+      "paper": "https://arxiv.org/abs/2602.20933",
+      "project": "https://sk-fun.fun/DropAnSH-GS"
+     },
+     {
+      "title": "Topology-Aware Gaussian Splatting for Dynamic Mesh Modeling and Tracking",
+      "paper": "https://arxiv.org/abs/2512.01329",
+      "project": "https://haza628.github.io/tagSplat/"
+     },
+     {
+      "title": "FastGS: Training 3D Gaussian Splatting in 100 Seconds",
+      "paper": "https://arxiv.org/pdf/2511.04283",
+      "code": "https://github.com/fastgs/FastGS",
+      "project": "https://fastgs.github.io/"
+     }
+    ]
+   },
+   {
+    "name": "Agent",
+    "papers": []
+   },
+   {
+    "name": "Avatars",
+    "papers": []
+   },
+   {
+    "name": "Backbone",
+    "papers": []
+   },
+   {
+    "name": "CLIP",
+    "papers": []
+   },
+   {
+    "name": "Mamba",
+    "papers": []
+   },
+   {
+    "name": "GAN",
+    "papers": []
+   },
+   {
+    "name": "OCR",
+    "papers": []
+   },
+   {
+    "name": "NeRF",
+    "papers": []
+   },
+   {
+    "name": "DETR",
+    "papers": []
+   },
+   {
+    "name": "Prompt",
+    "papers": []
+   },
+   {
+    "name": "MLLM",
+    "papers": [
+     {
+      "title": "Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking",
+      "paper": "https://arxiv.org/abs/2602.20330",
+      "code": "https://github.com/UIUC-MONET/vlm-circuit-tracing"
+     },
+     {
+      "title": "UniM: A Unified Any-to-Any Interleaved Multimodal Benchmark",
+      "paper": "https://arxiv.org/abs/2603.05075",
+      "project": "https://any2any-mllm.github.io/unim/"
+     }
+    ]
+   },
+   {
+    "name": "LLM",
+    "papers": []
+   },
+   {
+    "name": "Embodied AI",
+    "papers": [
+     {
+      "title": "Wanderland: Geometrically Grounded Simulation for Open-World Embodied AI",
+      "paper": "https://arxiv.org/abs/2511.20620",
+      "code": "https://github.com/ai4ce/wanderland",
+      "project": "https://ai4ce.github.io/wanderland/"
+     }
+    ]
+   },
+   {
+    "name": "Spatial Intelligence",
+    "papers": [
+     {
+      "title": "Spatial-SSRL: Enhancing Spatial Understanding via Self-Supervised Reinforcement Learning",
+      "paper": "https://arxiv.org/abs/2510.27606",
+      "code": "https://github.com/InternLM/Spatial-SSRL"
+     }
+    ]
+   },
+   {
+    "name": "NAS",
+    "papers": []
+   },
+   {
+    "name": "ReID",
+    "papers": [
+     {
+      "title": "MOS: Mitigating Optical-SAR Modality Gap for Cross-Modal Ship Re-Identification",
+      "paper": "https://arxiv.org/abs/2512.03404",
+      "code": "https://github.com/yjzhao1019/MOS"
+     }
+    ]
+   },
+   {
+    "name": "Diffusion Models",
+    "papers": []
+   },
+   {
+    "name": "Vision Transformer",
+    "papers": []
+   },
+   {
+    "name": "Vision-Language",
+    "papers": [
+     {
+      "title": "StructXLIP: Enhancing Vision-language Models with Multimodal Structural Cues",
+      "paper": "https://arxiv.org/abs/2602.20089",
+      "code": "https://github.com/intelligolabs/StructXLIP"
+     },
+     {
+      "title": "ApET: Approximation-Error Guided Token Compression for Efficient VLMs",
+      "paper": "https://arxiv.org/abs/2602.19870",
+      "code": "https://github.com/MaQianKun0/ApET"
+     },
+     {
+      "title": "Circuit Tracing in Vision-Language Models: Understanding the Internal Mechanisms of Multimodal Thinking",
+      "paper": "https://arxiv.org/abs/2602.20330",
+      "code": "https://github.com/UIUC-MONET/vlm-circuit-tracing"
+     }
+    ]
+   },
+   {
+    "name": "Object Detection",
+    "papers": []
+   },
+   {
+    "name": "Anomaly Detection",
+    "papers": []
+   },
+   {
+    "name": "Object Tracking",
+    "papers": []
+   },
+   {
+    "name": "Medical Image",
+    "papers": []
+   },
+   {
+    "name": "Medical Image Segmentation",
+    "papers": [
+     {
+      "title": "MedCLIPSeg: Probabilistic Vision–Language Adaptation for Data-Efficient and Generalizable Medical Image Segmentation",
+      "paper": "https://arxiv.org/abs/2602.20423",
+      "code": "https://github.com/HealthX-Lab/MedCLIPSeg",
+      "project": "https://tahakoleilat.github.io/MedCLIPSeg"
+     }
+    ]
+   },
+   {
+    "name": "Autonomous Driving",
+    "papers": [
+     {
+      "title": "Open-Vocabulary Domain Generalization in Urban-Scene Segmentation",
+      "paper": "https://arxiv.org/pdf/2602.18853",
+      "code": "https://github.com/DZhaoXd/s2_corr"
+     },
+     {
+      "title": "U4D: Uncertainty-Aware 4D World Modeling from LiDAR Sequences",
+      "paper": "https://arxiv.org/abs/2512.02982",
+      "code": "https://github.com/worldbench/U4D"
+     }
+    ]
+   },
+   {
+    "name": "3D-Point-Cloud",
+    "papers": [
+     {
+      "title": "CLIPoint3D: Language-Grounded Few-Shot Unsupervised 3D Point Cloud Domain Adaptation",
+      "paper": "https://arxiv.org/abs/2602.20409",
+      "code": "https://github.com/SarthakM320/CLIPoint3D"
+     }
+    ]
+   },
+   {
+    "name": "3D Object Detection",
+    "papers": []
+   },
+   {
+    "name": "3D Semantic Segmentation",
+    "papers": []
+   },
+   {
+    "name": "Low-level Vision",
+    "papers": []
+   },
+   {
+    "name": "Super-Resolution",
+    "papers": []
+   },
+   {
+    "name": "Denoising",
+    "papers": []
+   },
+   {
+    "name": "Image Denoising",
+    "papers": []
+   },
+   {
+    "name": "3D Human Pose Estimation",
+    "papers": []
+   },
+   {
+    "name": "Image Generation",
+    "papers": [
+     {
+      "paper": "https://arxiv.org/abs/2602.19900"
+     }
+    ]
+   },
+   {
+    "name": "Video Generation",
+    "papers": []
+   },
+   {
+    "name": "Image Editing",
+    "papers": []
+   },
+   {
+    "name": "Video Editing",
+    "papers": []
+   },
+   {
+    "name": "3D Generation",
+    "papers": []
+   },
+   {
+    "name": "3D Reconstruction",
+    "papers": [
+     {
+      "title": "tttLRM: Test-Time Training for Long Context and Autoregressive 3D Reconstruction",
+      "project": "https://cwchenwang.github.io/tttLRM/",
+      "paper": "https://arxiv.org/abs/2602.20160",
+      "code": "https://github.com/cwchenwang/tttLRM"
+     },
+     {
+      "title": "Flow3r: Factored Flow Prediction for Scalable Visual Geometry Learning",
+      "project": "https://flow3r-project.github.io/",
+      "paper": "https://arxiv.org/abs/2602.20157",
+      "code": "https://github.com/Kidrauh/flow3r"
+     },
+     {
+      "title": "RAP: Fast Feedforward Rendering-Free Attribute-Guided Primitive Importance Score Prediction for Efficient 3D Gaussian Splatting Processing",
+      "paper": "https://arxiv.org/abs/2602.19753",
+      "code": "https://github.com/yyyykf/RAP"
+     }
+    ]
+   },
+   {
+    "name": "Human Motion Generation",
+    "papers": []
+   },
+   {
+    "name": "Video Understanding",
+    "papers": []
+   },
+   {
+    "name": "Remote",
+    "papers": [
+     {
+      "paper": "https://arxiv.org/abs/2602.19863"
+     }
+    ]
+   },
+   {
+    "name": "Knowledge Distillation",
+    "papers": []
+   },
+   {
+    "name": "Depth Estimation",
+    "papers": []
+   },
+   {
+    "name": "Stereo Matching",
+    "papers": []
+   },
+   {
+    "name": "Low-light Image Enhancement",
+    "papers": []
+   },
+   {
+    "name": "#IC",
+    "papers": []
+   },
+   {
+    "name": "#VC",
+    "papers": [
+     {
+      "title": "UniComp: Rethinking Video Compression Through Informational Uniqueness",
+      "paper": "https://arxiv.org/abs/2512.03575",
+      "code": "https://github.com/TimeMarker-LLM/UniComp"
+     }
+    ]
+   },
+   {
+    "name": "Scene Graph Generation",
+    "papers": []
+   },
+   {
+    "name": "Image Retrieval",
+    "papers": [
+     {
+      "paper": "https://arxiv.org/abs/2603.04598"
+     }
+    ]
+   },
+   {
+    "name": "Style Transfer",
+    "papers": []
+   },
+   {
+    "name": "Image Quality Assessment",
+    "papers": []
+   },
+   {
+    "name": "Video Quality Assessment",
+    "papers": []
+   },
+   {
+    "name": "Compressive Sensing",
+    "papers": []
+   },
+   {
+    "name": "Datasets",
+    "papers": []
+   },
+   {
+    "name": "Others",
+    "papers": [
+     {
+      "title": "Decoupling Defense Strategies for Robust Image Watermarking",
+      "paper": "https://arxiv.org/abs/2602.20053"
+     },
+     {
+      "title": "Multi-Modal Representation Learning via Semi-Supervised Rate Reduction for Generalized Category Discovery",
+      "paper": "https://arxiv.org/abs/2602.19910"
+     },
+     {
+      "title": "The Invisible Gorilla Effect in Out-of-distribution Detection",
+      "paper": "https://arxiv.org/abs/2602.20068",
+      "code": "https://github.com/HarryAnthony/Invisible_Gorilla_Effect"
+     },
+     {
+      "title": "SimLBR: Learning to Detect Fake Images by Learning to Detect Real Images",
+      "paper": "https://arxiv.org/abs/2602.20412"
+     },
+     {
+      "title": "RecoverMark: Robust Watermarking for Localization and Recovery of Manipulated Faces",
+      "paper": "https://arxiv.org/abs/2602.20618"
+     },
+     {
+      "title": "Probing and Bridging Geometry-Interaction Cues for Affordance Reasoning in Vision Foundation Models"
+     },
+     {
+      "title": "GEM-TFL: Bridging Weak and Full Supervision for Forgery Localization through EM-Guided Decomposition and Temporal Refinement",
+      "paper": "https://arxiv.org/abs/2603.05095"
+     },
+     {
+      "title": "FOZO: Forward-Only Zeroth-Order Prompt Optimization for Test-Time Adaptation",
+      "paper": "https://arxiv.org/abs/2603.04825",
+      "code": "https://github.com/RyanZhaoIc/CAD"
+     }
+    ]
    }
   ]
  }
